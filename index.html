@@ -1,1 +1,251 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tran Duy Dat</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Tran Duy Dat</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Tran Duy Dat</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Duy Dat TRAN</h1>
+        <p class="section__text__p2">Étudiant en Master 1 Informatique</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv_portfolio.pdf')"
+          >
+            Mon CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contactez Moi
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/duy-dat-tran-636304268'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/tdd108'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1"></p>
+      <h1 class="title">À propos de Duy Dat Tran</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Étude</h3>
+              <p>Étudiant en Master 1 Informatique<br />Université Gustave Eiffel</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Je suis étudiant en <span>master 1 informatique</span> à <span>l'université Gustave Eiffel</span>. J'ai une connaissance approfondie du développement frontend et du développement backend. Je suis sérieux et désireux d'apprendre les nouvelles technologies et d'améliorer mes compétences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Découvrir mon</p>
+      <h1 class="title">Expérience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <h3>HTML</h3>
+                <div class="container">
+                  <div class="skills html"></div>
+                </div>
+              </article>
+              <article>
+                <h3>CSS</h3>
+                <div class="container">
+                  <div class="skills css"></div>
+                </div>
+              </article>
+              <article>
+                <h3>JAVASCRIPT</h3>
+                <div class="container">
+                  <div class="skills js"></div>
+                </div>
+              </article>
+              <article>
+                <h3>TYPESCRIPT</h3>
+                <div class="container">
+                  <div class="skills typescript"></div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <h3>JAVA</h3>
+                <div class="container">
+                  <div class="skills java"></div>
+                </div>
+              </article>
+              <article>
+                <h3>PYTHON</h3>
+                <div class="container">
+                  <div class="skills python"></div>
+                </div>
+              </article>
+              <article>
+                <h3>PHP</h3>
+                <div class="container">
+                  <div class="skills php"></div>
+                </div>
+              </article>
+              <article>
+                <h3>PSQL</h3>
+                <div class="container">
+                  <div class="skills psql"></div>
+                </div>
+              </article>
+              <article>
+                <h3>C</h3>
+                <div class="container">
+                  <div class="skills c"></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Parcourir mes</p>
+      <h1 class="title">Projets Récents</h1>
+      <div class="timeline">
+        <ul>
+          <li style="--accent-color:#41516C">
+              <div class="date">2021</div>
+              <div class="descr"> <span onclick="location.href='https://github.com/tdd108/Enjoy'">Enjoy!</span> Site de commande de nourriture.</div>
+              <div class="descr"> <span onclick="location.href='https://github.com/tdd108/Maze3D'">Maze 3D</span> Dans ce projet, j'ai recréé le jeu Maze 3D en utilisant python.</div>
+              <div class="descr"> <span onclick="location.href='https://github.com/tdd108/'">Chips vs Virues</span> Le but de ce projet est de créer le jeu Chips And Viruses en utilisant le langage C.</div>
+          </li>
+          <li style="--accent-color:#FBCA3E">
+              <div class="date">2022</div>
+              <div class="descr"> <span onclick="location.href='https://github.com/tdd108/QuadTree'">QuadTree</span> Le but de ce projet est de visualiser l'organisation d'un arbre quadratique.</div>
+              <div class="descr"> <span onclick="location.href='https://github.com/tdd108/'">Site Web de Covoiturage</span> Le but de ce projet est de créer un site de covoiturage en utilisant SQL, HTML.</div>
+          </li>
+          <li style="--accent-color:#E24A68">
+              <div class="date">2023</div>
+              <div class="descr"> <span onclick="location.href='https://github.com/tdd108/projet_compilation_L3'">TPC Compilateur</span> Le but de ce projet est de créer un compilateur pour le langage de programmation tpc.</div>
+              <div class="descr"> <span onclick="location.href='https://github.com/tdd108/TBA'">The Big Adventure</span> Le but de ce projet est de créer un jeu rpg 2D en java.</div>
+              <div class="descr"> <span onclick="location.href='https://github.com/tdd108/Tower-Defense'">Tower Defense</span> Le but de ce projet est de créer un jeu de tower defense en C.</div>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Contact</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:duy-dat.tran@edu.univ-
+            eiffel.fr">duy-dat.tran@edu.univ-
+            eiffel.fr</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/duy-dat-tran-636304268">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
