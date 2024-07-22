@@ -292,16 +292,16 @@ section {
 
 .about-details-container .text-container {
   width: 70%;
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 1.5vw, 2rem);
   text-align: justify;
 }
 
 .about-details-container .details-container p {
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .about-details-container .details-container h3 {
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .text-container p span {
